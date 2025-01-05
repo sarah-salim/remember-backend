@@ -6,15 +6,6 @@ import session from 'koa-session';
 import cors from 'koa2-cors';
 import crypto from 'node:crypto';
 
-function createInMemorySessionStore() {
-  const map = new Map();
-  return {
-    get: map.get.bind(map),
-    set: map.set.bind(map),
-    destroy: map.delete.bind(map),
-  };
-}
-
 const app = new Koa();
 
 // Dynamic PORT for Render
