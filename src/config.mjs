@@ -30,7 +30,7 @@ dotenv.config(); // Load environment variables
 export default {
   ISSUER_URL: process.env.ISSUER_URL || 'https://stg-id.singpass.gov.sg',
   CLIENT_ID: process.env.CLIENT_ID,
-  REDIRECT_URI: process.env.REDIRECT_URI || 'https://BACKEND-URL-EXAMPLE.onrender.com/callback',
+  REDIRECT_URI: process.env.REDIRECT_URI || 'https://remember-backend-m1mz.onrender.com/callback',
   SCOPES: process.env.SCOPES || 'openid uinfin name',
   KEYS: {
     PRIVATE_SIG_KEY: {
